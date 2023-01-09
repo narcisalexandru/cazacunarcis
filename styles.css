@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&family=Montserrat:ital,wght@1,200&family=Quantico&display=swap');
+/* font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quantico', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {  display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "headerImage";
+}
+
+.header-image {
+    height: 900px;
+    background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.description-top {
+    background-color: rgb(29, 29, 29);
+    font-family: 'Quantico', sans-serif;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description-top::after {
+    content: '<html>' ;
+    position: absolute;
+    margin-top: -120px;
+    left: 7.5px;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.description-top::before {
+    content: '<body>' ;
+    position: absolute;
+    margin-top: -80px;
+    left: 24px;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.description-header {
+    display: inline-block;
+    margin: 50px;
+
+    text-align: center;
+    font-size: 38px;
+    color: rgb(8, 253, 216, 0.5);
+}
+.description-text {
+    background-color: rgb(29, 29, 29);
+    
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 5px;
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.tags {
+    position: absolute;
+    top: 2px;
+    overflow: hidden;
+    float: left;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+.contact {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    height: 10%;
+    width: 100%;
+}
+
+.logo {
+    float: right;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+/* @media only screen and (min-width: 600px) */
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    display: grid; 
+    grid-template-columns: 47.5% 47.5% 5%; 
+    grid-template-rows: 947px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "headerImage headerDescription contact"; 
+}
+
+.header-image {
+    background-image: linear-gradient(to right, rgba(97, 172, 192, 0.5), rgba(97, 172, 192, 0.5)), url('images/portrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-description {    
+    background-color: grey;
+    font-family: 'Quantico', sans-serif;
+    padding: 10px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+.header-description-top {
+
+}
+.header-description-middle {
+
+}
+.header-description-bottom {
+    font-size: 24px;
+    color: rgb(97, 172, 192);
+}
+.contact-background {
+    background-color: grey;
+    border-left: 1px solid;
+    border-color: white;
+} */
+
+/* .circle-button {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background: rgb(61, 61, 61);
+    border-radius: 100%;
+
+    font-family: 'Merienda', cursive;
+    color: white;
+    font-size: 36px;
+
+    box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);
+
+    transition: .3s ease-in;
+}
+.circle-button:hover {
+    transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7);
+} */
