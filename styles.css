@@ -9,25 +9,41 @@ font-family: 'Quantico', sans-serif; */
     padding: 0;
 }
 
-.container {  
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "headerImage";
-
-    background-color: rgb(29, 29, 29);
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: stretch;
+    align-content: stretch;  
 }
-
-.header-image {
-    height: 900px;
+.row {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.flex-skills-images {
+    display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.flex-header-image {
+    height: 800px;
     background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .description-top {
+    background-color: rgb(29, 29, 29);
     font-family: 'Quantico', sans-serif;
     width: 100%;
 
@@ -64,6 +80,7 @@ font-family: 'Quantico', sans-serif; */
     color: rgb(8, 253, 216);
 }
 .description-text {
+    background-color: rgb(29, 29, 29);
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -86,19 +103,20 @@ font-family: 'Quantico', sans-serif; */
 
 }
 .skills-text {
+    background-color: rgb(29, 29, 29);
     display: inline-block;
     align-items: flex-start;
     justify-content: left;
 
-    padding-left: 20px;
+    padding: 40px;
 
     text-align: left;
     font-size: 36px;
     color: rgb(8, 253, 216);
 }
 .skills-images {
-    display: inline-block;
-    width: 100%;
+    width: 30%;
+    height: 30%;
 }
 .contact {
     overflow: hidden;
