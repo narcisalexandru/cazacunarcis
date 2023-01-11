@@ -21,7 +21,17 @@ font-family: 'Quantico', sans-serif; */
     background-color: rgb(29, 29, 29);
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.column {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -29,11 +39,11 @@ font-family: 'Quantico', sans-serif; */
 }
 .flex-skills-images {
     display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
 }
 .flex-header-image {
     height: 800px;
@@ -87,6 +97,7 @@ font-family: 'Quantico', sans-serif; */
     
     padding: 25px;
     
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 24px;
     color: white;
@@ -102,7 +113,7 @@ font-family: 'Quantico', sans-serif; */
     font-size: 18px;
 
 }
-.skills-text {
+.title-description {
     background-color: rgb(29, 29, 29);
     display: inline-block;
     align-items: flex-start;
@@ -110,13 +121,57 @@ font-family: 'Quantico', sans-serif; */
 
     padding: 40px;
 
+    font-family: 'Quantico', sans-serif;
     text-align: left;
-    font-size: 36px;
+    font-size: 24px;
     color: rgb(8, 253, 216);
+}
+.title-description::before {
+    content: "──";
+    padding: 2px;
+}
+.title-description::after {
+    content: "────";
+    padding: 2px;
 }
 .skills-images {
     width: 30%;
     height: 30%;
+    padding: 20px;
+}
+.card-image {
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+}
+.card-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-family: 'Quantico', sans-serif;
+    text-align: center;
+    color: white;
+    
+    padding: 10px;
+}
+.card-tools {
+    display: flex;
+    width: 50%;
+    height: 30%;
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.card-tools-image {
+    width: 40%;
+    height: 40%;
+    padding: 5px;
 }
 .contact {
     overflow: hidden;
@@ -133,7 +188,6 @@ font-family: 'Quantico', sans-serif; */
     height: 40px;
     width: 40px;
 }
-
 /* @media only screen and (min-width: 600px) */
 
 
