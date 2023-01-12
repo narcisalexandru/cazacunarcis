@@ -8,7 +8,9 @@ font-family: 'Quantico', sans-serif; */
     margin: 0;
     padding: 0;
 }
-
+body {
+    background-color: rgb(29, 29, 29);
+}
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +20,6 @@ font-family: 'Quantico', sans-serif; */
     align-content: stretch;  
 }
 .row {
-    background-color: rgb(29, 29, 29);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,7 +29,6 @@ font-family: 'Quantico', sans-serif; */
     padding: 20px;
 }
 .column {
-    background-color: rgb(29, 29, 29);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -53,7 +53,6 @@ font-family: 'Quantico', sans-serif; */
 }
 
 .description-top {
-    background-color: rgb(29, 29, 29);
     font-family: 'Quantico', sans-serif;
     width: 100%;
 
@@ -66,6 +65,8 @@ font-family: 'Quantico', sans-serif; */
     position: absolute;
     margin-top: -160px;
     left: 7.5px;
+    
+    padding: 2px;
 
     color: rgb(81, 81, 82);
     font-family: 'Montserrat', sans-serif;
@@ -90,7 +91,6 @@ font-family: 'Quantico', sans-serif; */
     color: rgb(8, 253, 216);
 }
 .description-text {
-    background-color: rgb(29, 29, 29);
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -114,7 +114,6 @@ font-family: 'Quantico', sans-serif; */
 
 }
 .title-description {
-    background-color: rgb(29, 29, 29);
     display: inline-block;
     align-items: flex-start;
     justify-content: left;
@@ -187,7 +186,23 @@ font-family: 'Quantico', sans-serif; */
     height: 40%;
     padding: 5px;
 }
-.contact {
+.contact-icons {
+    padding: 5px;
+    width: 10%;
+    height: 10%;
+}
+.contact-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+    
+    text-decoration: none;
+    color: grey;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-header {
     overflow: hidden;
     background-color: transparent;
     position: fixed;
@@ -201,6 +216,31 @@ font-family: 'Quantico', sans-serif; */
     padding: 5px;
     height: 40px;
     width: 40px;
+}
+.map {
+    width: 100vw;
+    height: 30vh;
+}
+.map::before {
+    content: "</body>";
+    position: absolute;
+    margin-top: 295px;
+    left: 24px;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.map::after {
+    content: "</html>";
+    position: absolute;
+    margin-top: 320px;
+    padding-bottom: 30px;
+    left: 7.5px;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 /* @media only screen and (min-width: 600px) */
 
