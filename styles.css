@@ -46,7 +46,7 @@ font-family: 'Quantico', sans-serif; */
     order: 0;
 }
 .flex-header-image {
-    height: 800px;
+    height: 100vh;
     background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
