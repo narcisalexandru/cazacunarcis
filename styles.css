@@ -144,7 +144,7 @@ font-family: 'Quantico', sans-serif; */
     height: 70%;
     padding: 20px;
 }
-.card-text {
+.card-title {
     display: flex;
     width: 100%;
     height: 100%;
@@ -152,6 +152,20 @@ font-family: 'Quantico', sans-serif; */
     align-items: center;
 
     font-size: 32px;
+    font-family: 'Quantico', sans-serif;
+    text-align: center;
+    color: white;
+    
+    padding: 10px;
+}
+.card-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24           px;
     font-family: 'Quantico', sans-serif;
     text-align: center;
     color: white;
