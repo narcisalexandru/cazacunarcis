@@ -224,7 +224,7 @@ body {
 .map::before {
     content: "</body>";
     position: absolute;
-    margin-top: 295px;
+    margin-top: 270px;
     left: 24px;
 
     color: rgb(81, 81, 82);
@@ -234,7 +234,7 @@ body {
 .map::after {
     content: "</html>";
     position: absolute;
-    margin-top: 320px;
+    margin-top: 290px;
     padding-bottom: 30px;
     left: 7.5px;
 
