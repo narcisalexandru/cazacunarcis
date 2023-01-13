@@ -242,6 +242,46 @@ body {
     font-size: 18px;
 }
 
+/* Very Small devices (382.8px and down) */
+@media (max-width: 382.8px) {
+    .description-top::after {
+        margin-top: -220px;
+    }
+    .description-top::before {
+        margin-top: -180px;
+    }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .description-top::after {
+        margin-top: -120px;
+    }
+    .description-top::before {
+        margin-top: -80px;
+    }
+    .skills-images {
+        width: 20%;
+        height: 20%;
+    }
+    .card-tools-image {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
+
 
 
 
