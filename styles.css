@@ -28,7 +28,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
 }
 .column {
     display: flex;
@@ -192,7 +191,7 @@ body {
     overflow: hidden;
     background-color: transparent;
     position: fixed;
-    bottom: 785px;
+    top: 0;
     padding: 10px;
     height: 10%;
     width: 100%;
@@ -314,22 +313,28 @@ body {
         width: 5.5%;
         height: 100vh;
         right: 0;
-        bottom: 0;
+        margin: 0 auto;
+        padding: 5px;
         border-left: 1px solid white;
     }
     .flex-header-image {
-        display: inline-block;
+        display: flex;
         width: 45%;
     }
     .description-top {
-        display: inline-block;
+        display: flex;
         width: 45%;
+
     }
     .description-text {
-        display: inline-block;
+        display: flex;
         width: 45%;
-    }
 
+    }
+    .column-header {
+        height: 100vh;
+        justify-content: center;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
