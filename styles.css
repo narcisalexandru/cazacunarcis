@@ -247,12 +247,12 @@ body {
         margin-top: -80px;
     }
     .skills-images {
-        width: 20%;
-        height: 20%;
+        width: 17.5%;
+        height: auto;
     }
     .card-tools-image {
-        width: 20%;
-        height: 20%;
+        width: 12.5%;
+        height: auto;
     }
     .contact-icons {
         width: 7%;
@@ -273,13 +273,17 @@ body {
     }
     .skills-images {
         width: 15%;
-        height: 15%;
+        height: auto;
     }
     .card-title {
         font-size: 36px;
     }
     .card-text {
         font-size: 24px;
+    }
+    .card-tools-image {
+        width: 10%;
+        height: auto;
     }
     .contact-text {
         font-size: 24px;
