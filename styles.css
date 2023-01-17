@@ -24,6 +24,12 @@ body {
     align-items: center;
     align-content: center;
 }
+.column-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+}
 .column {
     display: flex;
     flex-direction: column;
@@ -186,7 +192,7 @@ body {
     overflow: hidden;
     background-color: transparent;
     position: fixed;
-    top: 0;
+    bottom: 785px;
     padding: 10px;
     height: 10%;
     width: 100%;
@@ -194,7 +200,7 @@ body {
 .logo {
     float: right;
     padding: 5px;
-    height: 40px;
+    height: auto;
     width: 40px;
 }
 .map {
@@ -268,8 +274,8 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .logo {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
     }
     .skills-images {
         width: 15%;
@@ -302,7 +308,29 @@ body {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+    .contact-header {
+        padding: 2px;
+        width: 5.5%;
+        height: 100vh;
+        right: 0;
+        bottom: 0;
+        border-left: 1px solid white;
+    }
+    .flex-header-image {
+        display: inline-block;
+        width: 45%;
+    }
+    .description-top {
+        display: inline-block;
+        width: 45%;
+    }
+    .description-text {
+        display: inline-block;
+        width: 45%;
+    }
+
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
