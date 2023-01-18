@@ -15,6 +15,7 @@ body {
     display: flex;
     align-items: stretch;
     align-content: stretch;
+
 }
 .row {
     display: flex;
@@ -127,15 +128,8 @@ body {
     height: auto;
     padding: 10px;
 }
-.card-image {
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    
-    width: 90%;
-    
-    padding: 3px;
+.cards {
+    width: 100%;
 }
 .card-title {
     display: flex;
@@ -147,6 +141,16 @@ body {
     text-align: center;
     color: white;
     
+}
+.card-image {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+    
+    padding: 3px;
 }
 .card-text {
     display: flex;
@@ -308,14 +312,30 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .flex-container {
+        width: 93.7vw;
+    }
     .contact-header {
-        padding: 2px;
-        width: 5.5%;
-        height: 100vh;
-        right: 0;
-        margin: 0 auto;
-        padding: 5px;
         border-left: 1px solid white;
+        right: 0;
+        width: 6.3vw;
+        height: 100%;
+    }
+    .contact-header-mobile {
+        display: none;
+    }
+    .logo {
+        width: 40px;
+        height: auto;
+        margin: 5px;
+    }
+    .column {
+        width: 93.7vw;
+    }
+    .column-header {
+        width: 93.7vw;
+        height: 100vh;
+        justify-content: center;
     }
     .flex-header-image {
         display: flex;
@@ -331,10 +351,49 @@ body {
         width: 45%;
 
     }
-    .column-header {
-        height: 100vh;
-        justify-content: center;
+    .title-description {
+        margin: 20px;
     }
+    .title-description::after {
+       content: "────────"; 
+    }
+    .title-description::before {
+        content: "────";
+    }
+    .skills-images {
+        width: 10%;
+        height: auto;
+    }
+    .card-column {
+        height: 100%;
+    }
+    .cards {
+        width: 24%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        margin: 0 15px;
+    }
+    .card-title {
+        margin: auto;
+        padding: 10px;
+        font-size: 24px;
+    }
+    .card-image {
+        width: 95%;
+        margin: auto;
+        padding: auto;
+    }
+    .card-text {
+        font-size: 12px;
+        height: auto;
+        margin: auto;
+        padding: auto;
+    }
+    .card-tools {
+        height: auto;
+        margin: auto;
+        padding: auto;
+    }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -409,4 +468,4 @@ body {
 .circle-button:hover {
     transform: translateY(-5px);
   box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7);
-} */
+}
