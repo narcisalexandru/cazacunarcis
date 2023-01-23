@@ -36,8 +36,10 @@ body {
     flex-wrap: wrap;
 }
 .flex-header-image {
+    position: relative;
     width: 100vw;
     height: 100vh;
+    background-position: center;
     background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -314,6 +316,9 @@ body {
 @media (min-width: 992px) {
     .flex-container {
         width: 93.7vw;
+    }
+    .flex-header-image {
+        position: fixed;
     }
     .contact-header {
         border-left: 1px solid white;
