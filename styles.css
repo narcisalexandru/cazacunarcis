@@ -296,9 +296,11 @@ body {
     }
     .card-title {
         font-size: 36px;
+        padding: 15px;
     }
     .card-text {
         font-size: 24px;
+        padding: 15px;
     }
     .card-tools-image {
         width: 10%;
