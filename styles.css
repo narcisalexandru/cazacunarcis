@@ -133,6 +133,12 @@ body {
 .cards {
     width: 100%;
 }
+.card-column {
+    margin: 10%;
+}
+.card-link {
+    text-decoration: none;
+}
 .card-title {
     display: flex;
     justify-content: center;
@@ -142,6 +148,8 @@ body {
     font-family: 'Quantico', sans-serif;
     text-align: center;
     color: white;
+
+    padding-bottom: 10px;
     
 }
 .card-image {
@@ -150,9 +158,8 @@ body {
     justify-content: center;
     align-items: center;
     
-    width: 90%;
+    width: 100%;
     
-    padding: 3px;
 }
 .card-text {
     display: flex;
@@ -163,7 +170,8 @@ body {
     font-family: 'Quantico', sans-serif;
     text-align: center;
     color: white;
-    padding: 3px;
+
+    padding-top: 10px;
 }
 .card-tools {
     display: flex;
