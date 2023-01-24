@@ -345,16 +345,24 @@ body {
         width: 46.8vw;
         height: 100vh;
     }
+    .title-description {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     .column {
         display: flex;
         width: 46.8vw;
-        
-        
-        align-items: center;
-        justify-content: center;
-
     }
-    
+    .map {
+        width: 40vw;
+        margin: 10px auto;
+    }
+    .contact-icons {
+        width: 40px;
+        height: auto;
+        margin-left: 35px;
+    }
     
     
     
@@ -375,6 +383,14 @@ body {
     .title-description::after {
         content: "──────";
         padding: 5px;
+    }
+    .map::after {
+        margin-top: 380px;
+        margin-left: 490px;
+    }
+    .map::before {
+        margin-top: 360px;
+        margin-left: 490px;
     }
     
 
