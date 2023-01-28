@@ -385,6 +385,7 @@ body {
     .contact-header {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
         border-left: 1px solid white;
         right: 0;
@@ -421,6 +422,9 @@ body {
     .cards {
         width: 47.5%;
     }
+    .card-title {
+        font-size: 32px;
+    }
     .contact-icons {
         width: 40px;
         height: auto;
@@ -456,7 +460,11 @@ body {
     }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+@media (min-width: 1400px) {
+
+    /* TO DO : FIX body / html tags try to don't use position absolute, use something responsive */
+
+  }
 
 
 
