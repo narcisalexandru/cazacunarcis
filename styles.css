@@ -418,6 +418,10 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+        font-size: 24px;
+    }
+    .description-text {
+        font-size: 22px;
     }
     .cards {
         width: 47.5%;
