@@ -379,9 +379,82 @@ body {
 }
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    .contact-header-mobile {
+        display: none;
+    }
+    .contact-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 1px solid white;
+        right: 0;
+        width: 6.3vw;
+        height: 100%;
+    }
+    .flex-header-image {
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        width: 46.8vw;
+        height: 100vh;
+    }
+    .logo {
+        width: 45px;
+        height: auto;
+        margin: 5px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .column {
+        display: flex;
+        width: 46.8vw;
+    }
+    .flex-container {
+        width: 93.7vw;
+        justify-content: flex-end;
+    }
+    .title-description {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cards {
+        width: 47.5%;
+    }
+    .contact-icons {
+        width: 40px;
+        height: auto;
+        margin-left: 35px;
+    }
+    .map {
+        width: 40vw;
+        margin: 10px auto;
+    }
+    .description-top::after {
+        margin-top: -120px;
+        margin-left: 680px;
+    }
+    .description-top::before {
+        margin-top: -85px;
+        margin-left: 680px;
+    }
+    .title-description::before {
+        content: "──────";
+        padding: 5px;
+    }
+    .title-description::after {
+        content: "──────";
+        padding: 5px;
+    }
+    .map::after {
+        margin-top: 470px;
+        margin-left: 680px;
+    }
+    .map::before {
+        margin-top: 450px;
+        margin-left: 680px;
+    }
 }
-
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
 
