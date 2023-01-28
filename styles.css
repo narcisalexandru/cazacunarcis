@@ -319,77 +319,68 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .contact-header {
-        border-left: 1px solid white;
-        right: 0;
-        width: 6.3vw;
-        height: 100%;
-    }
-    .contact-header-mobile {
-        display: none;
-    }
     .logo {
-        width: 40px;
-        height: auto;
-        margin: 5px;
-    }
-
-    .flex-container {
-        width: 93.7vw;
-        justify-content: flex-end;
+        height: 50px;
+        width: 50px;
     }
     .flex-header-image {
-        display: flex;
-        justify-content: flex-start;
-        position: fixed;
-        width: 46.8vw;
-        height: 100vh;
+        background-position-y: top;
+    }
+    .description-header-title {
+        font-size: 42px;
+    }
+    .description-text {
+        font-size: 26px;
     }
     .title-description {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        font-size: 36px;
     }
-    .column {
-        display: flex;
-        width: 46.8vw;
+    .skills-images {
+        width: 12.5%;
+        height: auto;
     }
-    .map {
-        width: 40vw;
-        margin: 10px auto;
+    .cards {
+        width: 30.33%;
+    }
+    .card-title {
+        font-size: 36px;
+        padding: 15px;
+    }
+    .card-text {
+        font-size: 24px;
+        padding: 15px;
+    }
+    .card-tools-image {
+        width: 15%;
+        height: auto;
+    }
+    .contact-text {
+        font-size: 24px;
+        margin: 7.5px;
     }
     .contact-icons {
-        width: 40px;
+        width: 4.5%;
         height: auto;
-        margin-left: 35px;
     }
-    .description-top::after {
-        margin-top: -170px;
-        margin-left: 490px;
+    .column {
+        width: 100vw;
     }
-    .description-top::before {
-        margin-top: -130px;
-        margin-left: 490px;
-    }
-    .title-description::before {
-        content: "──────";
-        padding: 5px;
-    }
-    .title-description::after {
-        content: "──────";
-        padding: 5px;
+    .map {
+        margin: 30px auto;
+        width: 60vw;
+        height: 40vh;
     }
     .map::after {
-        margin-top: 470px;
-        margin-left: 490px;
+        margin-top: 480px;
     }
     .map::before {
-        margin-top: 450px;
-        margin-left: 490px;
+        margin-top: 460px;
     }
 }
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
