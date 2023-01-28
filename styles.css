@@ -129,7 +129,7 @@ body {
     width: 100%;
 }
 .card-column {
-    margin: 10%;
+    margin: 5%;
 }
 .card-link {
     text-decoration: none;
@@ -363,11 +363,6 @@ body {
         height: auto;
         margin-left: 35px;
     }
-    
-    
-    
-    
-    
     .description-top::after {
         margin-top: -170px;
         margin-left: 490px;
@@ -385,52 +380,14 @@ body {
         padding: 5px;
     }
     .map::after {
-        margin-top: 380px;
+        margin-top: 470px;
         margin-left: 490px;
     }
     .map::before {
-        margin-top: 360px;
+        margin-top: 450px;
         margin-left: 490px;
     }
-    
-
-
-    /* .skills-images {
-        width: 10%;
-        height: auto;
-    }
-    .card-column {
-        height: 100%;
-    }
-    .cards {
-        width: 24%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        margin: 0 15px;
-    }
-    .card-title {
-        margin: auto;
-        padding: 10px;
-        font-size: 24px;
-    }
-    .card-image {
-        width: 95%;
-        margin: auto;
-        padding: auto;
-    }
-    .card-text {
-        font-size: 12px;
-        height: auto;
-        margin: auto;
-        padding: auto;
-    }
-    .card-tools {
-        height: auto;
-        margin: auto;
-        padding: auto;
-    } */
-
 }
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
 
