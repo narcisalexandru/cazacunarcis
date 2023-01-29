@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&family=Montserrat:ital,wght@1,200&family=Quantico&display=swap');
 /* font-family: 'Merienda', cursive;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Quantico', sans-serif; */
+font-family: 'Quantico', sans-serif;
+
+
+Title Header - font-size: 34px;
+Description Header - font-size: 18px
+Title Description - font-size 30px
+Card Title - font-size 22px
+Card Text  - font-size 16px
+Contact Text - font-size 16px
+
+*/
 
 * {
     box-sizing: border-box;
@@ -50,14 +60,14 @@ body {
 .description-top::after {
     content: '<html>' ;
     position: absolute;
-    margin-top: -160px;
+    margin-top: -150px;
     left: 7.5px;
     
     padding: 2px;
 
     color: rgb(81, 81, 82);
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 .description-top::before {
     content: '<body>' ;
@@ -67,14 +77,14 @@ body {
 
     color: rgb(81, 81, 82);
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 .description-header-title {
     display: block;
-    margin: 50px;
+    margin: 40px;
 
     text-align: center;
-    font-size: 38px;
+    font-size: 34px;
     color: rgb(8, 253, 216);
 }
 .description-text {
@@ -87,7 +97,7 @@ body {
     
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
 }
 .tags {
@@ -140,7 +150,7 @@ body {
     justify-content: center;
     align-items: flex-start;
 
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Quantico', sans-serif;
     text-align: center;
     color: white;
@@ -193,6 +203,7 @@ body {
     padding: 2px;
     
     text-decoration: none;
+    font-size: 16px;
     color: grey;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -220,32 +231,42 @@ body {
 .map::before {
     content: "</body>";
     position: absolute;
-    margin-top: 300px;
+    margin-top: 325px;
     left: 24px;
 
     color: rgb(81, 81, 82);
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 .map::after {
     content: "</html>";
     position: absolute;
-    margin-top: 320px;
+    margin-top: 340px;
     padding-bottom: 10px;
     left: 7.5px;
 
     color: rgb(81, 81, 82);
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Very Small devices (382.8px and down) */
 @media (max-width: 382.8px) {
+    .description-header-title {
+        font-size: 30px;
+    }
+    
     .description-top::after {
-        margin-top: -220px;
+        margin-top: -150px;
     }
     .description-top::before {
-        margin-top: -180px;
+        margin-top: -120px;
+    }
+    .map::after {
+        margin-top: 340px;
+    }
+    .map::before {
+        margin-top: 325px;
     }
     .contact-icons {
         width: 10%;
@@ -431,7 +452,7 @@ body {
         width: 47.5%;
     }
     .card-title {
-        font-size: 32px;
+        font-size: 24px;
     }
     .contact-icons {
         display: flex;
