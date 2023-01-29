@@ -25,7 +25,6 @@ body {
     display: flex;
     align-items: stretch;
     align-content: stretch;
-
 }
 .row {
     display: flex;
@@ -40,6 +39,15 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 }
+.contact-header {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    height: 10%;
+    width: 100%;
+}
 .flex-header-image {
     position: relative;
     width: 100vw;
@@ -49,35 +57,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .description-top {
     font-family: 'Quantico', sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.description-top::after {
-    content: '<html>' ;
-    position: absolute;
-    margin-top: -150px;
-    left: 7.5px;
-    
-    padding: 2px;
-
-    color: rgb(81, 81, 82);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-}
-.description-top::before {
-    content: '<body>' ;
-    position: absolute;
-    margin-top: -120px;
-    left: 24px;
-
-    color: rgb(81, 81, 82);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
 }
 .description-header-title {
     display: block;
@@ -100,17 +85,6 @@ body {
     font-size: 18px;
     color: white;
 }
-.tags {
-    position: absolute;
-    top: 2px;
-    overflow: hidden;
-    float: left;
-
-    color: rgb(81, 81, 82);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-
-}
 .title-description {
     display: block;
     align-items: flex-start;
@@ -122,14 +96,6 @@ body {
     text-align: left;
     font-size: 24px;
     color: rgb(8, 253, 216);
-}
-.title-description::before {
-    content: "──";
-    padding: 2px;
-}
-.title-description::after {
-    content: "────";
-    padding: 2px;
 }
 .skills-images {
     width: 20%;
@@ -181,10 +147,8 @@ body {
 }
 .card-tools {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
 }
 .card-tools-image {
     width: 12.5%;
@@ -198,24 +162,12 @@ body {
 }
 .contact-text {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 2px;
     
     text-decoration: none;
     font-size: 16px;
     color: grey;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
-}
-.contact-header {
-    overflow: hidden;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    padding: 10px;
-    height: 10%;
-    width: 100%;
 }
 .logo {
     float: right;
@@ -227,6 +179,37 @@ body {
     margin: 5px auto;
     width: 90vw;
     height: 30vh;
+}
+ /* ::BEFORE / ::AFTER  */
+.title-description::before {
+    content: "──";
+    padding: 2px;
+}
+.title-description::after {
+    content: "────";
+    padding: 2px;
+}
+.description-top::after {
+    content: '<html>' ;
+    position: absolute;
+    margin-top: -150px;
+    left: 7.5px;
+    
+    padding: 2px;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.description-top::before {
+    content: '<body>' ;
+    position: absolute;
+    margin-top: -120px;
+    left: 24px;
+
+    color: rgb(81, 81, 82);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 .map::before {
     content: "</body>";
@@ -249,8 +232,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-
-/* Very Small devices (382.8px and down) */
 @media (max-width: 382.8px) {
     .description-header-title {
         font-size: 30px;
@@ -273,58 +254,68 @@ body {
         height: 10%;
     }
 }
-
- /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .description-top::after {
-        margin-top: -120px;
+        margin-top: -100px;
     }
     .description-top::before {
-        margin-top: -80px;
+        margin-top: -70px;
     }
     .skills-images {
-        width: 17.5%;
+        width: 15%;
         height: auto;
+    }
+    .cards {
+        width: 45%;
     }
     .card-tools-image {
         width: 12.5%;
         height: auto;
     }
     .contact-icons {
-        width: 7%;
-        height: 7%;
+        width: 6%;
+        height: 6%;
+        margin: 3px 3px 3px 40px;
+    }
+    .contact-text {
+        margin: 5px;
+    }
+    .column {
+        margin: 0px auto;
     }
     .map {
-        margin: 5px auto;
-        width: 90vw;
+        margin: 10px auto;
+        width: 80vw;
         height: 30vh;
     }
 }
-
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .logo {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
     }
     .skills-images {
-        width: 15%;
+        width: 10%;
         height: auto;
     }
     .card-title {
-        font-size: 36px;
+        font-size: 20px;
         padding: 15px;
     }
     .card-text {
-        font-size: 24px;
-        padding: 15px;
+        font-size: 16px;
+        padding: 5px;
     }
     .card-tools-image {
         width: 10%;
         height: auto;
     }
     .contact-text {
-        font-size: 24px;
+        font-size: 16px;
+    }
+    .contact-icons {
+        width: 5%;
+        margin: 3px 3px 3px 0px;
     }
     .map {
         margin: 5px auto;
@@ -338,38 +329,36 @@ body {
         margin-top: 440px;
     }
 }
-
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .logo {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
     }
     .flex-header-image {
         background-position-y: top;
     }
     .description-header-title {
-        font-size: 42px;
-    }
-    .description-text {
-        font-size: 26px;
-    }
-    .title-description {
         font-size: 36px;
     }
+    .description-text {
+        font-size: 20px;
+    }
+    .title-description {
+        font-size: 24px;
+    }
     .skills-images {
-        width: 12.5%;
+        width: 7%;
         height: auto;
     }
     .cards {
         width: 30.33%;
     }
     .card-title {
-        font-size: 36px;
+        font-size: 20px;
         padding: 15px;
     }
     .card-text {
-        font-size: 24px;
+        font-size: 16px;
         padding: 15px;
     }
     .card-tools-image {
@@ -377,20 +366,21 @@ body {
         height: auto;
     }
     .contact-text {
-        font-size: 24px;
+        font-size: 18px;
         margin: 7.5px;
     }
     .contact-icons {
-        width: 4.5%;
+        width: 4%;
         height: auto;
+        margin-left: 60px;
     }
     .column {
         width: 100vw;
     }
     .map {
         margin: 30px auto;
-        width: 60vw;
-        height: 40vh;
+        width: 80vw;
+        height: 50vh;
     }
     .map::after {
         margin-top: 480px;
@@ -399,7 +389,6 @@ body {
         margin-top: 460px;
     }
 }
-/* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .contact-header-mobile {
         display: none;
@@ -422,7 +411,7 @@ body {
         height: 100vh;
     }
     .logo {
-        width: 45px;
+        width: 40px;
         height: auto;
         margin: 5px auto;
         align-items: center;
@@ -431,10 +420,20 @@ body {
     .column {
         display: flex;
         width: 57.2vw;
+        margin: 0px;
     }
     .flex-container {
         width: 94vw;
         justify-content: flex-end;
+    }
+    .description-header-title {
+        font-size: 32px;
+    }
+    .description-text {
+        display: flex;
+        font-size: 18px;
+        width: 95%;
+        margin: 0 auto;
     }
     .title-description {
         align-items: center;
@@ -442,29 +441,34 @@ body {
         text-align: center;
         font-size: 24px;
     }
-    .description-text {
-        display: flex;
-        font-size: 22px;
-        width: 95%;
-        margin: 0 auto;
+    .skills-images {
+        width: 10%;
     }
     .cards {
         width: 47.5%;
     }
     .card-title {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .card-tools-image {
+        width: 12%;
     }
     .contact-icons {
         display: flex;
-        width: 40px;
+        width: 6%;
         height: auto;
         margin-left: 45px;
     }
     .contact-text {
+        font-size: 16px;
         margin: 0px;
     }
     .map {
         width: 50vw;
+        height: 40vh;
         margin: 10px auto;
     }
     .description-top::after {
