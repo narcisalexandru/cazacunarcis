@@ -500,11 +500,30 @@ body {
         margin-left: 680px;
     }
 }
-/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
-    /* TO DO : FIX body / html tags try to don't use position absolute, use something responsive */
-
+    .logo {
+        width: 45px
+    }
+    .contact-header {
+        width: 5vw;
+    }
+    .description-header-title {
+        margin: 60px auto;
+        font-size: 42px;
+    }
+    .description-text {
+        margin: 60px auto;
+    }
+    .row {
+        margin: 60px;
+    }
+    .title-description {
+        padding: 25px;
+    }
+    .contact-icons {
+        width: 4.5%;
+        margin-left: 65px;
+    }
   }
 
 
