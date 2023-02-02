@@ -39,7 +39,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 }
-.contact-header {
+.fixed-contact {
     overflow: hidden;
     background-color: transparent;
     position: fixed;
@@ -48,7 +48,7 @@ body {
     height: 10%;
     width: 100%;
 }
-.flex-header-image {
+.header-image {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -57,15 +57,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.description-top {
+.header-title {
     font-family: 'Quantico', sans-serif;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.description-header-title {
-    display: block;
     margin: 40px;
 
     text-align: center;
@@ -85,7 +82,7 @@ body {
     font-size: 18px;
     color: white;
 }
-.title-description {
+.section-title {
     display: block;
     align-items: flex-start;
     justify-content: left;
@@ -169,27 +166,27 @@ body {
     color: grey;
     font-family: 'Montserrat', sans-serif;
 }
-.logo {
+.fixed-contact-icons {
     float: right;
     padding: 5px;
     height: auto;
     width: 40px;
 }
-.map {
+.map {vh
     margin: 5px auto;
     width: 90vw;
     height: 30vh;
 }
  /* ::BEFORE / ::AFTER  */
-.title-description::before {
+.section-title::before {
     content: "──";
     padding: 2px;
 }
-.title-description::after {
+.section-title::after {
     content: "────";
     padding: 2px;
 }
-.description-top::after {
+.header-title::after {
     content: '<html>' ;
     position: absolute;
     margin-top: -150px;
@@ -201,7 +198,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.description-top::before {
+.header-title::before {
     content: '<body>' ;
     position: absolute;
     margin-top: -120px;
@@ -237,10 +234,10 @@ body {
         font-size: 30px;
     }
     
-    .description-top::after {
+    .header-title::after {
         margin-top: -150px;
     }
-    .description-top::before {
+    .header-title::before {
         margin-top: -120px;
     }
     .map::after {
@@ -255,10 +252,10 @@ body {
     }
 }
 @media (min-width: 576px) {
-    .description-top::after {
+    .header-title::after {
         margin-top: -100px;
     }
-    .description-top::before {
+    .header-title::before {
         margin-top: -70px;
     }
     .skills-images {
@@ -290,17 +287,17 @@ body {
     }
 }
 @media (min-width: 768px) {
-    .logo {
+    .fixed-contact-icons {
         height: 40px;
         width: 40px;
     }
-    .title-description {
+    .section-title {
         text-align: center;
     }
-    .title-description::after {
+    .section-title::after {
         content:"──────";
     }
-    .title-description::before {
+    .section-title::before {
         content: "──────";
     }
     .skills-images {
@@ -340,11 +337,11 @@ body {
     }
 }
 @media (min-width: 992px) {
-    .logo {
+    .fixed-contact-icons {
         height: 45px;
         width: 45px;
     }
-    .flex-header-image {
+    .header-image {
         background-position-y: top;
     }
     .description-header-title {
@@ -353,7 +350,7 @@ body {
     .description-text {
         font-size: 20px;
     }
-    .title-description {
+    .section-title {
         font-size: 24px;
     }
     .skills-images {
@@ -389,7 +386,7 @@ body {
     }
     .map {
         margin: 30px auto;
-        width: 80vw;
+        width: 80vw;flex-header-image
         height: 50vh;
     }
     .map::after {
@@ -400,10 +397,10 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    .contact-header-mobile {
+    .fixed-contact-mobile {
         display: none;
     }
-    .contact-header {
+    .fixed-contact {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -413,14 +410,14 @@ body {
         width: 6vw;
         height: 100%;
     }
-    .flex-header-image {
+    .header-image {
         display: flex;
         justify-content: flex-start;
         position: fixed;
         width: 36.8vw;
         height: 100vh;
     }
-    .logo {
+    .fixed-contact-icons {
         width: 40px;
         height: auto;
         margin: 5px auto;
@@ -445,7 +442,7 @@ body {
         width: 95%;
         margin: 0 auto;
     }
-    .title-description {
+    .section-title {
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -481,21 +478,21 @@ body {
         height: 40vh;
         margin: 10px auto;
     }
-    .description-top::after {
+    .header-title::after {
         display: none;
         margin-top: -120px;
         margin-left: 680px;
     }
-    .description-top::before {
+    .header-title::before {
         display: none;
         margin-top: -85px;
         margin-left: 680px;
     }
-    .title-description::before {
+    .section-title::before {
         content: "──────";
         padding: 5px;
     }
-    .title-description::after {
+    .section-title::after {
         content: "──────";
         padding: 5px;
     }
@@ -511,10 +508,10 @@ body {
     }
 }
 @media (min-width: 1400px) {
-    .logo {
+    .fixed-contact-icons {
         width: 45px
     }
-    .contact-header {
+    .fixed-contact {
         width: 5vw;
     }
     .description-header-title {
@@ -527,7 +524,7 @@ body {
     .row {
         margin: 60px;
     }
-    .title-description {
+    .section-title {
         padding: 25px;
     }
     .contact-icons {
