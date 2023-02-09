@@ -50,7 +50,7 @@ body {
 }
 .header-image {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
@@ -172,10 +172,11 @@ body {
     height: auto;
     width: 40px;
 }
-.map {vh
+.map {
+    display: flex;
     margin: 5px auto;
-    width: 90vw;
-    height: 30vh;
+    width: 90%;
+    height: 100%;
 }
  /* ::BEFORE / ::AFTER  */
 .section-title::before {
@@ -233,7 +234,9 @@ body {
     .description-header-title {
         font-size: 30px;
     }
-    
+    .contact-text {
+        margin-left: 10px;
+    }
     .header-title::after {
         margin-top: -150px;
     }
@@ -282,8 +285,8 @@ body {
     }
     .map {
         margin: 10px auto;
-        width: 80vw;
-        height: 30vh;
+        width: 90%;
+        height: 90%;
     }
 }
 @media (min-width: 768px) {
@@ -318,7 +321,7 @@ body {
     }
     .contact-text {
         font-size: 16px;
-        justify-content: center;
+        margin-left: 70px;
     }
     .contact-icons {
         width: 5%;
@@ -326,8 +329,8 @@ body {
     }
     .map {
         margin: 5px auto;
-        width: 80vw;
-        height: 40vh;
+        width: 90%;
+        height: 100%;
     }
     .map::after {
         margin-top: 460px;
@@ -374,7 +377,7 @@ body {
     }
     .contact-text {
         font-size: 18px;
-        margin: 7.5px;
+        margin-left: 30px;
     }
     .contact-icons {
         width: 4%;
@@ -382,12 +385,12 @@ body {
         margin-left: 60px;
     }
     .column {
-        width: 100vw;
+        width: 100%;
     }
     .map {
-        margin: 30px auto;
-        width: 80vw;flex-header-image
-        height: 50vh;
+        margin: 10px auto;
+        width: 90%;
+        height: 100%;
     }
     .map::after {
         margin-top: 480px;
@@ -407,14 +410,14 @@ body {
         align-items: center;
         border-left: 1px solid white;
         right: 0;
-        width: 6vw;
+        width: 5%;
         height: 100%;
     }
     .header-image {
         display: flex;
         justify-content: flex-start;
         position: fixed;
-        width: 36.8vw;
+        width: 35%;
         height: 100vh;
     }
     .fixed-contact-icons {
@@ -426,11 +429,11 @@ body {
     }
     .column {
         display: flex;
-        width: 57.2vw;
+        width: 63.3%;
         margin: 0px;
     }
     .flex-container {
-        width: 94vw;
+        width: 95%;
         justify-content: flex-end;
     }
     .description-header-title {
@@ -471,11 +474,12 @@ body {
     }
     .contact-text {
         font-size: 16px;
-        margin: 0px;
+        margin: 0;
+        margin-left: 10px;
     }
     .map {
-        width: 50vw;
-        height: 40vh;
+        width: 90%;
+        height: 90%;
         margin: 10px auto;
     }
     .header-title::after {
@@ -512,7 +516,7 @@ body {
         width: 45px
     }
     .fixed-contact {
-        width: 5vw;
+        width: 5%;
     }
     .description-header-title {
         margin: 60px auto;
