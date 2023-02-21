@@ -72,6 +72,8 @@ body {
     background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    box-shadow: 0 0 3px rgb(8, 253, 216), 0 0 9px rgb(8, 253, 216), 0 0 12px rgb(8, 253, 216), 0 0 24px rgb(8, 253, 216), 0 0 42px transparent, 0 0 6px rgb(8, 253, 216), 0 0 68px transparent;
 }
 .header-title {
     font-family: 'Quantico', sans-serif;
@@ -84,6 +86,50 @@ body {
     text-align: center;
     font-size: 34px;
     color: rgb(8, 253, 216);
+
+    -webkit-animation: blink 12s infinite;
+    animation: blink 12s infinite;
+}
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+    text-shadow: 0 0 5px rgb(8, 253, 216), 0 0 15px rgb(8, 253, 216), 0 0 20px rgb(8, 253, 216), 0 0 40px rgb(8, 253, 216), 0 0 60px transparent, 0 0 10px rgb(8, 253, 216), 0 0 98px transparent;
+      color: rgb(8, 253, 216);
+    }
+}
+  
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+    text-shadow: 0 0 5px rgb(8, 253, 216), 0 0 15px rgb(8, 253, 216), 0 0 20px rgb(8, 253, 216), 0 0 40px rgb(8, 253, 216), 0 0 60px transparent, 0 0 10px rgb(8, 253, 216), 0 0 98px transparent;
+      color: rgb(8, 253, 216);
+    }
 }
 .description-text {
     display: flex;
