@@ -26,6 +26,13 @@ body {
     align-items: stretch;
     align-content: stretch;
 }
+.flex-container-header {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: row-reverse;
+
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -49,7 +56,16 @@ body {
     width: 100%;
 }
 .header-image {
-    position: relative;
+    position: static;
+    width: 100%;
+    height: 100svh;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(8, 253, 216, 0.3), rgba(8, 253, 216, 0.3)), url('images/portrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-image-desktop {
+    display: none;
     width: 100%;
     height: 100svh;
     background-position: center;
@@ -413,13 +429,6 @@ body {
         width: 5%;
         height: 100%;
     }
-    .header-image {
-        display: flex;
-        justify-content: flex-start;
-        position: fixed;
-        width: 35%;
-        height: 100svh;
-    }
     .fixed-contact-icons {
         width: 40px;
         height: auto;
@@ -427,14 +436,37 @@ body {
         align-items: center;
         justify-content: center;
     }
+    .header-image {
+        display: none;
+    }
+    .header-image-desktop {
+        display: flex;
+        margin: auto;
+        height: 300px;
+        width: 300px;
+    }
+    .column-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 10px;
+        width: 60%;
+        margin-bottom: 100px;
+
+    }
     .column {
         display: flex;
-        width: 63.3%;
+        width: 100%;
         margin: 0px;
     }
     .flex-container {
         width: 95%;
-        justify-content: flex-end;
+    }
+    .flex-container-header {
+        width: 95%;
+        align-items: center;
+        margin: 50px auto;
+        justify-content: center;
     }
     .description-header-title {
         font-size: 32px;
