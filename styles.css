@@ -189,7 +189,6 @@ body {
     align-items: center;
     
     width: 100%;
-    
 }
 .card-text {
     display: flex;
@@ -293,17 +292,11 @@ body {
     font-size: 14px;
 }
 @media (max-width: 382.8px) {
-    .description-header-title {
+    .header-title {
         font-size: 30px;
     }
     .contact-text {
         margin-left: 10px;
-    }
-    .header-title::after {
-        margin-top: -150px;
-    }
-    .header-title::before {
-        margin-top: -120px;
     }
     .map::after {
         margin-top: 340px;
@@ -318,12 +311,6 @@ body {
     }
 }
 @media (min-width: 576px) {
-    .header-title::after {
-        margin-top: -100px;
-    }
-    .header-title::before {
-        margin-top: -70px;
-    }
     .skills-images {
         width: 15%;
         height: auto;
@@ -407,7 +394,7 @@ body {
         height: 45px;
         width: 45px;
     }
-    .description-header-title {
+    .header-title {
         font-size: 36px;
     }
     .description-text {
@@ -421,7 +408,7 @@ body {
         height: auto;
     }
     .cards {
-        width: 30.33%;
+        width: 45%;
     }
     .card-title {
         font-size: 20px;
@@ -493,10 +480,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 10px;
+        margin: 100px 10px 100px 10px;
         width: 60%;
-        margin-bottom: 100px;
-
     }
     .column {
         display: flex;
@@ -512,7 +497,7 @@ body {
         margin: 50px auto;
         justify-content: center;
     }
-    .description-header-title {
+    .header-title {
         font-size: 32px;
     }
     .description-text {
@@ -528,13 +513,13 @@ body {
         font-size: 24px;
     }
     .skills-images {
-        width: 10%;
+        width: 7.5%;
     }
     .cards {
         width: 47.5%;
     }
     .card-title {
-        font-size: 20px;
+        font-size: 24px;
     }
     .card-text {
         font-size: 14px;
@@ -555,18 +540,8 @@ body {
     }
     .map {
         width: 90%;
-        height: 90%;
+        height: 300px;
         margin: 10px auto;
-    }
-    .header-title::after {
-        display: none;
-        margin-top: -120px;
-        margin-left: 680px;
-    }
-    .header-title::before {
-        display: none;
-        margin-top: -85px;
-        margin-left: 680px;
     }
     .section-title::before {
         content: "──────";
@@ -578,13 +553,9 @@ body {
     }
     .map::after {
         display: none;
-        margin-top: 470px;
-        margin-left: 680px;
     }
     .map::before {
         display: none;
-        margin-top: 450px;
-        margin-left: 680px;
     }
 }
 @media (min-width: 1400px) {
@@ -594,21 +565,36 @@ body {
     .fixed-contact {
         width: 5%;
     }
-    .description-header-title {
-        margin: 60px auto;
+    .header-title {
+        margin: auto;
         font-size: 42px;
     }
     .description-text {
+        font-size: 24px;
         margin: 60px auto;
-    }
-    .row {
-        margin: 60px;
     }
     .section-title {
         padding: 25px;
+        font-size: 32px;
+    }
+    .row {
+        margin: 50px;
+    }
+    .skills-images {
+        width: 100px;
+        height: auto;
+    }
+    .cards {
+        width: 30%;
     }
     .contact-icons {
-        width: 4%;
-        margin-left: 110px;
+        width: 50px;
+        margin-left: 160px;
+    }
+    .map {
+        display: flex;
+        align-items: flex-end;
+        width: 500px;
+        margin-bottom: 100px;
     }
   }
