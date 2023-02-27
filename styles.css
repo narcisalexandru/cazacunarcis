@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&family=Montserrat:ital,wght@1,200&family=Quantico&display=swap');
 /* font-family: 'Merienda', cursive;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Quantico', sans-serif;
-
-
-Title Header - font-size: 34px;
-Description Header - font-size: 18px
-Title Description - font-size 30px
-Card Title - font-size 22px
-Card Text  - font-size 16px
-Contact Text - font-size 16px
-
-*/
+font-family: 'Quantico', sans-serif; */
 
 * {
     box-sizing: border-box;
@@ -42,6 +32,11 @@ body {
     align-content: center;
 }
 .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.column-contact {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -529,19 +524,21 @@ body {
     }
     .contact-icons {
         display: flex;
-        width: 4%;
+        width: 40px;
         height: auto;
         margin-left: 95px;
     }
     .contact-text {
         font-size: 16px;
-        margin: 0;
         margin-left: 10px;
     }
     .map {
         width: 90%;
-        height: 300px;
+        height: 80%;
         margin: 10px auto;
+    }
+    .column-contact {        
+        margin-top: 50px;
     }
     .section-title::before {
         content: "──────";
@@ -597,4 +594,4 @@ body {
         width: 500px;
         margin-bottom: 100px;
     }
-  }
+}
