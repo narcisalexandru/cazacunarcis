@@ -24,17 +24,6 @@ body {
     align-content: stretch;
     flex-direction: row-reverse;
 }
-.contact-text-container {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-}
-.contact-map-container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-
-}
 .row {
     display: flex;
     flex-direction: row;
@@ -50,10 +39,24 @@ body {
 }
 .column-contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
+}
+.contact-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.contact-map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    width: 80%;
 }
 .fixed-contact {
     overflow: hidden;
@@ -246,6 +249,10 @@ body {
     height: auto;
     width: 40px;
 }
+.footer {
+    width: 100%;
+    background-color: transparent;
+}
  /* ::BEFORE / ::AFTER  */
 .section-title::before {
     content: "──";
@@ -277,20 +284,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.map::before {
+.footer::before {
     content: "</body>";
     position: absolute;
-    margin-top: 325px;
+    margin-top: 0px;
     left: 24px;
 
     color: rgb(81, 81, 82);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.map::after {
+.footer::after {
     content: "</html>";
     position: absolute;
-    margin-top: 340px;
+    margin-top: 15px;
     padding-bottom: 10px;
     left: 7.5px;
 
@@ -305,11 +312,11 @@ body {
     .contact-text {
         margin-left: 10px;
     }
-    .map::after {
-        margin-top: 340px;
+    .footer::before {
+        margin-top: 0px;
     }
-    .map::before {
-        margin-top: 325px;
+    .footer::after {
+        margin-top: 15px;
     }
     .contact-icons {
         width: 40px;
@@ -330,20 +337,8 @@ body {
         height: auto;
     }
     .contact-icons {
-        width: 6%;
-        height: 6%;
-        margin: 3px 3px 3px 50px;
-    }
-    .contact-text {
-        margin: 5px;
-    }
-    .column {
-        margin: 0px auto;
-    }
-    .map {
-        margin: 10px auto;
-        width: 90%;
-        height: 90%;
+        width: 40px;
+        height: 40px;
     }
 }
 @media (min-width: 768px) {
@@ -358,12 +353,6 @@ body {
     }
     .section-title {
         text-align: center;
-    }
-    .section-title::after {
-        content:"──────";
-    }
-    .section-title::before {
-        content: "──────";
     }
     .skills-images {
         width: 10%;
@@ -383,30 +372,31 @@ body {
     }
     .contact-text {
         font-size: 16px;
-        margin-left: 70px;
     }
     .contact-icons {
         display: flex;
         width: 40px;
-        height: auto;
-        margin-left: 95px;
+        height: 40px;
     }
     .column-contact {
         display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
         justify-content: center;
-        text-align: center;  
-        margin-top: 50px;
+        text-align: center;
+        margin: auto 10px;
     }
-    .map {
-        width: 500px;
-        height: 300px;
-        margin: 10px auto;
+    .section-title::after {
+        content:"──────";
     }
-    .map::after {
-        margin-top: 460px;
+    .section-title::before {
+        content: "──────";
     }
-    .map::before {
-        margin-top: 440px;
+    .footer::before {
+        margin-top: 0px;
+    }
+    .footer::after {
+        margin-top: 15px;
     }
 }
 @media (min-width: 992px) {
@@ -444,26 +434,18 @@ body {
     }
     .contact-text {
         font-size: 18px;
-        margin-left: 30px;
     }
     .contact-icons {
-        width: 4%;
-        height: auto;
-        margin-left: 60px;
+        width: 40px;
     }
     .column {
         width: 100%;
     }
-    .map {
-        margin: 10px auto;
-        width: 90%;
-        height: 100%;
+    .footer::before {
+        margin-top: 0px;
     }
-    .map::after {
-        margin-top: 480px;
-    }
-    .map::before {
-        margin-top: 460px;
+    .footer::after {
+        margin-top: 15px;
     }
 }
 @media (min-width: 1200px) {
@@ -557,11 +539,6 @@ body {
         font-size: 16px;
         margin-left: 10px;
     }
-    .map {
-        width: 60%;
-        height: 90%;
-        margin: 10px auto;
-    }
     .column-contact {
         display: flex;
         justify-content: center;
@@ -576,10 +553,10 @@ body {
         content: "──────";
         padding: 5px;
     }
-    .map::after {
+    .footer::after {
         display: none;
     }
-    .map::before {
+    .footer::before {
         display: none;
     }
 }
@@ -615,11 +592,5 @@ body {
     .contact-icons {
         width: 50px;
         margin-left: 160px;
-    }
-    .map {
-        display: flex;
-        align-items: flex-end;
-        width: 500px;
-        margin-bottom: 100px;
     }
 }
