@@ -234,6 +234,9 @@ body {
     height: 40px;
     margin-left: 40px;
 }
+.map {
+    height: 300px;
+}
 .contact-text {
     display: flex;
     align-items: center;
@@ -535,15 +538,18 @@ body {
         height: auto;
         margin-left: 95px;
     }
+    .contact-map-container {
+        height: 500px;
+    }
+    .map {
+        height: 300px;
+    }
     .contact-text {
         font-size: 16px;
         margin-left: 10px;
     }
     .column-contact {
-        display: flex;
-        justify-content: center;
-        text-align: center;  
-        margin-top: 50px;
+
     }
     .section-title::before {
         content: "──────";
@@ -566,6 +572,9 @@ body {
     }
     .fixed-contact {
         width: 5%;
+    }
+    .map {
+        height: 300px;
     }
     .header-title {
         margin: auto;
